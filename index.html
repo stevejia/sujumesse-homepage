@@ -1,0 +1,27 @@
+<html lang="en" class=" js csstransitions">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <script src="./plugins/jquery/jquery-2.0.3.min.js"></script>
+  <script>
+    $(function () {
+      var href = "./cn/index.html";
+      var language = sessionStorage.getItem("lang")
+      if (language) {
+        if (language == "cn") {
+          href = "./cn/index.html";
+        } else if (language == "en")
+          href = "./en/index.html";
+      } else {
+        sessionStorage.setItem("lang", "cn");
+      }
+      window.location.href = href;
+    });
+  </script>
+  </body>
+
+</html>
