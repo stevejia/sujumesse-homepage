@@ -412,8 +412,10 @@
         }
         var $col = $('<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12"></div>');
         var $imgContainer = $('<div class="img-container"></div>');
+        var $aLink = $('<a href="../images/cases-v1.0.0/'+ name +'.jpeg" target="_blank"></a>')
         var $img = $('<img data-original="../images/cases-v1.0.0/'+ name +'.jpeg" alt="" />');
-        $imgContainer.append($img);
+        $aLink.append($img);
+        $imgContainer.append($aLink);
         $col.append($imgContainer);
         $row.append($col);
       }
